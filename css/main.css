@@ -383,11 +383,6 @@ main {
   margin-left: 50px;
 }
 
-.site-nav :hover,
-.site-nav :focus {
-  color: var(--accent-tex-color--);
-}
-
 .link {
   display: block;
   font-weight: 500;
@@ -447,6 +442,13 @@ main {
   padding-top: 32px;
   padding-bottom: 32px;
   fill: currentColor;
+}
+
+.mailto:hover, .mailto:focus,
+.tel:hover,
+.tel:focus {
+  color: var(--accent-tex-color--);
+  fill: var(--accent-tex-color--);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -457,18 +459,6 @@ main {
 
 .tel-nav {
   margin-left: 30px;
-}
-
-.mailto:hover,
-.mailto:focus {
-  color: var(--accent-tex-color--);
-  fill: var(--accent-tex-color--);
-}
-
-.tel:hover,
-.tel:focus {
-  color: var(--accent-tex-color--);
-  fill: var(--accent-tex-color--);
 }
 
 .section-hero {
@@ -521,8 +511,7 @@ main {
   border: inherit;
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: #188ce8;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -719,18 +708,17 @@ main {
   width: 44px;
   height: 44px;
   color: #afb1b8;
+}
+
+.social-network:hover, .social-network:focus {
+  color: var(--White-color--);
+  background-color: var(--accent-tex-color--);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-network {
   fill: currentColor;
-}
-
-.social-network:hover,
-.social-network:focus {
-  color: var(--White-color--);
-  background-color: var(--accent-tex-color--);
 }
 
 .clients-item {
@@ -774,14 +762,13 @@ main {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-logo:hover,
-.client-logo:focus {
+.client-logo:hover, .client-logo:focus {
   border: 1px solid var(--accent-tex-color--);
   color: var(--accent-tex-color--);
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-client {
@@ -849,18 +836,14 @@ main {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-mailto:hover,
-.contact-mailto:focus {
-  color: var(--accent-tex-color--);
-}
-
+.contact-mailto:hover, .contact-mailto:focus,
 .contact-tel:hover,
 .contact-tel:focus {
   color: var(--accent-tex-color--);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social {
@@ -900,7 +883,13 @@ main {
   width: 44px;
   height: 44px;
   fill: var(--White-color--);
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-network:hover, .join-network:focus {
+  background-color: var(--accent-tex-color--);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-join {
@@ -916,19 +905,8 @@ main {
           justify-content: center;
 }
 
-.join-item {
+.join-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.join-item:last-child {
-  margin-right: 0;
-}
-
-.join-item :hover,
-.join-item :focus {
-  background-color: var(--accent-tex-color--);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-nav {
@@ -1000,13 +978,12 @@ main {
   letter-spacing: 0.06em;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
+.subscribe-btn:hover, .subscribe-btn:focus {
   background-color: #188ce8;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-subscribe {
@@ -1053,6 +1030,10 @@ main {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+.filter-overlay > img {
+  display: block;
 }
 
 .filter-overlay {
