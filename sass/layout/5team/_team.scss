@@ -1,0 +1,74 @@
+.team {
+  background-color: #f5f4fa;
+}
+.team-item {
+  display: flex;
+  text-align: center;
+}
+.foto {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.foto:not(:first-child) {
+  margin-left: 30px;
+}
+.partner {
+  background-color: var(--White-color--);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding-bottom: 10px;
+
+  color: var(--title-tex-color--);
+}
+.work {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-tex-color--);
+}
+
+.network-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-right: 32px;
+
+  margin-left: 32px;
+}
+
+.network-item > li:not(:first-child) {
+  margin-left: 10px;
+}
+.social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-network {
+  fill: currentColor;
+}
+.social-network:hover,
+.social-network:focus {
+  color: var(--White-color--);
+  background-color: var(--accent-tex-color--);
+}
