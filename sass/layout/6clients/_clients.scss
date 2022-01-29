@@ -1,9 +1,9 @@
-.clients-item {
+.clients {
   display: flex;
   flex-basis: calc(100% / 6);
 }
 
-.client {
+.client__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,10 +12,10 @@
   height: 92px;
 }
 
-.client:not(:first-child) {
+.client__item:not(:first-child) {
   margin-left: 30px;
 }
-.client-logo {
+.client__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +35,6 @@
   }
 }
 
-.icon-client {
+.client__icon {
   fill: currentColor;
 }
