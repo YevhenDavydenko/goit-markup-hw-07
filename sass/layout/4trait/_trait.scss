@@ -1,6 +1,6 @@
-.study-title,
-.command-title,
-.clients-title {
+.trait__title,
+.team__title,
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -11,18 +11,20 @@
 
   color: var(--title-tex-color--);
 }
-
-.box {
+.trait {
+  padding-top: 0px;
+}
+.study {
   display: flex;
   flex-basis: calc(100% / 3);
 }
-.worker:not(:first-child) {
+.study__item:not(:first-child) {
   margin-left: 30px;
 }
-.worker {
+.study__item {
   position: relative;
 }
-.work-thumb {
+.study__thumb {
   position: absolute;
   bottom: 0;
 
@@ -36,7 +38,7 @@
   background: rgba(47, 48, 58, 0.8);
 }
 
-.work-title {
+.study__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
