@@ -999,7 +999,7 @@ main {
   margin-left: 8px;
 }
 
-.button-portfolio {
+.filters__btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1011,7 +1011,7 @@ main {
   padding: 6px 22px;
 }
 
-.button-portfolio:hover, .button-portfolio:focus {
+.filters__btn:hover, .filters__btn:focus {
   color: var(--White-color--);
   background-color: var(--accent-tex-color--);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1022,7 +1022,7 @@ main {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-list {
+.portfolio__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1033,13 +1033,13 @@ main {
   margin-bottom: -30px;
 }
 
-.filter-cards {
+.portfolio__cards {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
-.filter-cards:hover, .filter-cards:focus {
+.portfolio__cards:hover, .portfolio__cards:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1048,12 +1048,23 @@ main {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-overlay {
+.portfolio__cards:hover .portfolio__text,
+.portfolio__cards:focus .portfolio__text {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.tehno {
+.portfolio__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -1071,25 +1082,14 @@ main {
           transform: translateY(100%);
 }
 
-.filter-cards:hover .tehno,
-.filter-cards:focus .tehno {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  opacity: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filter-info {
+.portfolio__info {
   padding: 20px 24px 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.lable {
+.portfolio__title {
   color: var(--title-tex-color--);
   font-weight: 700;
   font-size: 18px;
@@ -1097,7 +1097,7 @@ main {
   letter-spacing: 0.06em;
 }
 
-.filter-lable {
+.portfolio__lable {
   color: var(--primary-tex-color--);
   font-size: 16px;
   line-height: 1.87;

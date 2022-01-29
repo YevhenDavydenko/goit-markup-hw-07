@@ -1,4 +1,4 @@
-.filter-list {
+.portfolio__list {
   display: flex;
   margin-top: 50px;
   flex-wrap: wrap;
@@ -6,7 +6,7 @@
   margin-bottom: -30px;
 }
 
-.filter-cards {
+.portfolio__cards {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
@@ -19,12 +19,20 @@
   }
 }
 
-.filter-overlay {
+.portfolio__cards:hover .portfolio__text,
+.portfolio__cards:focus .portfolio__text {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.tehno {
+.portfolio__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -44,15 +52,7 @@
   transform: translateY(100%);
 }
 
-.filter-cards:hover .tehno,
-.filter-cards:focus .tehno {
-  transform: translateY(0%);
-  opacity: 1;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filter-info {
+.portfolio__info {
   padding: 20px 24px 20px 24px;
 
   border-right: 1px solid #eeeeee;
@@ -60,7 +60,7 @@
   border-left: 1px solid #eeeeee;
 }
 
-.lable {
+.portfolio__title {
   color: var(--title-tex-color--);
 
   font-weight: 700;
@@ -68,7 +68,7 @@
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.filter-lable {
+.portfolio__lable {
   color: var(--primary-tex-color--);
 
   font-size: 16px;
