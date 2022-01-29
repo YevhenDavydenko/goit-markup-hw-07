@@ -1,7 +1,7 @@
 .contact-footer {
   display: flex;
 }
-.logo-footer {
+.contact-footer__logo {
   text-decoration: none;
   display: block;
   width: 145px;
@@ -12,21 +12,16 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.contact-mailto {
-  display: block;
-  width: 231px;
-  padding-top: 9px;
-}
-.contact-tel {
-  display: block;
 
-  padding-top: 9px;
+.contact-footer__web {
+  color: var(--accent-tex-color--);
 }
-.logo-footer .studio-footer {
+.contact-footer__studio {
   color: var(--White-color--);
   text-decoration: none;
 }
-.address {
+
+.contact-footer__address {
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -39,8 +34,19 @@
 
   color: var(--White-color--);
 }
-.contact-mailto,
-.contact-tel {
+.contact-footer__mailto {
+  display: block;
+  width: 231px;
+  padding-top: 9px;
+}
+.contact-footer__tel {
+  display: block;
+
+  padding-top: 9px;
+}
+
+.contact-footer__mailto,
+.contact-footer__tel {
   text-decoration: none;
 
   font-size: 14px;

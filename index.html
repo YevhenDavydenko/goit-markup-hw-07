@@ -364,10 +364,10 @@
 <!-- Футер контакты -->
         <div class="footer-nav"> 
              <ul>
-                 <li><a class="logo-footer" href=""> <span class="web">Web</span><span class="studio-footer">Studio</span> </a></li>
-                 <li><a class="address" href="https://goo.gl/maps/1GZU7aaaTQPB9hGB9" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
-                 <li><a class="contact-mailto" href="mailto:info@example.com">info@example.com</a></li>
-                 <li><a class="contact-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                 <li><a class="contact-footer__logo" href=""> <span class="contact-footer__web">Web</span><span class="contact-footer__studio">Studio</span> </a></li>
+                 <li><a class="contact-footer__address" href="https://goo.gl/maps/1GZU7aaaTQPB9hGB9" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
+                 <li><a class="contact-footer__mailto" href="mailto:info@example.com">info@example.com</a></li>
+                 <li><a class="contact-footer__tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
              </ul>
         </div>
 <!-- Присоединяйтесь -->
@@ -427,8 +427,8 @@
 
 <div class="backdrop is-hidden" data-modal >
     <div class="modal">
-            <button class="modal-close" data-modal-close>
-                <svg class="icon-modal-close" width="18px" height="18px">
+            <button class="modal__btn-close" data-modal-close>
+                <svg class="modal__icon="18px" height="18px">
                     <use href="./images/icons.svg#modal-close"></use>
                 </svg>
             </button>
@@ -436,50 +436,50 @@
 <!-- Форма     -->
         
         <form class="modal-form">
-            <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <p class="modal-form__title">Оставьте свои данные, мы вам перезвоним</p>
 <!-- Имя     -->           
-            <label class="form-filed">   
-                <label class="form-lable" for="name">Имя</label>
-                <span class="form-person">
-                    <input class="form-input" type="name" name="name" id="name">
-                    <svg class="icon-form-person" width="18px" height="18px">
+            <label class="form__filed">   
+                <label class="form__lable" for="name">Имя</label>
+                <span class="form__person">
+                    <input class="form__input" type="name" name="name" id="name">
+                    <svg class="form__icon" width="18px" height="18px">
                         <use href="./images/icons.svg#person"></use>
                     </svg>
                 </span>
             </label>
 <!-- Телефон -->           
-            <div class="form-filed">
-                <label class="form-lable" for="tel">Телефон</label>
-                <span class="form-person">
-                    <input class="form-input" type="tel" name="tel" id="tel">
-                    <svg class="icon-form-person" width="18px" height="18px">
+            <div class="form__filed">
+                <label class="form__lable" for="tel">Телефон</label>
+                <span class="form__person">
+                    <input class="form__input" type="tel" name="tel" id="tel">
+                    <svg class="form__icon" width="18px" height="18px">
                         <use href="./images/icons.svg#phone"></use>
                     </svg>
                 </span>
             </div>
 <!-- Почта -->
-            <div class="form-filed">
-                <label class="form-lable" for="mail">Почта</label>
-                <span class="form-person">
-                    <input class="form-input" type="mail" name="mail" id="mail">
-                    <svg class="icon-form-person" width="18px" height="18px">
+            <div class="form__filed">
+                <label class="form__lable" for="mail">Почта</label>
+                <span class="form__person">
+                    <input class="form__input" type="mail" name="mail" id="mail">
+                    <svg class="form__icon" width="18px" height="18px">
                         <use href="./images/icons.svg#email"></use>
                     </svg>
                 </span>
             </div>
 <!-- Комментарий -->
-            <div class="form-filed comment">
-                <label class="form-lable" for="comment">Комментарий</label>
-                <textarea name="comment" class="form-input comment" id="comment" placeholder="Введите текст"></textarea>
+            <div class="form__filed comment">
+                <label class="form__lable" for="comment">Комментарий</label>
+                <textarea class="form__input comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
             </div>
 <!-- Условия договора     -->
             <label class="modal-agreement">
-                <input class="modal-checkbox visually-hidden" type="checkbox" name="user-agreement"/>
-                <svg class="icon-modal-checkbox"width="18px" height="18px">
+                <input class="modal-agreement__checkbox visually-hidden" type="checkbox" name="user-agreement"/>
+                <svg class="modal-agreement__icon"width="18px" height="18px">
                     <use href="./images/icons.svg#check"></use>
                 </svg>
-                <span class="modal-agreement-text">Соглашаюсь с рассылкой и принимаю
-                    <a href="" class="modal-agreement-link">Условия договора
+                <span class="modal-agreement__text">Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="modal-agreement__link">Условия договора
                     </a>
                 </span>
             </label>          
